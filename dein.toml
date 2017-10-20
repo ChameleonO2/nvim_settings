@@ -44,13 +44,7 @@ repo = 'Shougo/vimproc.vim'
 	'''
 		
 
-[[plugins]]
-	repo = 'Xuyuanp/nerdtree-git-plugin'
-	depends = 'scrooloose/nerdtree'
 
-[[plugins]]
-#	repo ='Shougo/vimfiler.vim'
-   repo= 'scrooloose/nerdtree'
 [[plugins]]
 	repo ='tpope/vim-fugitive'
 
