@@ -28,11 +28,13 @@ if dein#load_state(s:dein_dir)
   let s:denitetoml = '~/.config/nvim/denite.toml'
   let s:lazy_toml = '~/.config/nvim/dein_lazy.toml'
   let s:python_toml = '~/.config/nvim/dein_python.toml'
+  let s:toml_toml = '~/.config/nvim/dein_toml.toml'
 
   call dein#load_toml('~/.config/nvim/dein.toml',{'lazy': 0})
   call dein#load_toml(s:denitetoml,{'lazy': 0})
   call dein#load_toml('~/.config/nvim/dein_lazy.toml', {'lazy': 1})
   call dein#load_toml(s:python_toml, {'lazy': 1})
+  call dein#load_toml(s:toml_toml, {'lazy': 1})
 
   call dein#end()
   call dein#save_state()

@@ -57,15 +57,15 @@ repo = 'Shougo/vimproc.vim'
 [[plugins]]
 	repo = 'cohama/lexima.vim'
 	
-[[plugins]]
-	repo = 'osyo-manga/vim-precious'
-	depends =['Shougo/context_filetype.vim']
-
-[[plugins]]
-	repo = 'Shougo/context_filetype.vim'
-	hook_add='''
-	if !exists('g:context_filetype#filetypes')
-	let g:context_filetype#filetypes={}
-	endif
-	'''
+# [[plugins]]
+# 	repo = 'osyo-manga/vim-precious'
+# 	depends =['Shougo/context_filetype.vim']
+#
+# [[plugins]]
+# 	repo = 'Shougo/context_filetype.vim'
+# 	hook_add='''
+# 	if !exists('g:context_filetype#filetypes')
+# 	let g:context_filetype#filetypes={}
+# 	endif
+# 	'''
 
