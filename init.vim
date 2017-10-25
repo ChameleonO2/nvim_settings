@@ -47,6 +47,12 @@ endif
 	nnoremap <leader>e:VimFilerExplore -split -windowth=30 -find -no-quit<Cr>
 """}}}
 
+"""easymotion setting{{{
+		" map <Leader> <Plug>(easymotion-prefix)
+		" let g:EasyMotion_do_mapping = 0
+		" nmap s <Plug>(easymotion-S)
+"""}}}
+
 """vim settings
 set noswapfile
 set smartindent
