@@ -1,4 +1,4 @@
-[plugins]]
+[[plugins]]
 	repo= 'scrooloose/nerdtree'
 	hook_add='''
 	let g:NERDTreeShowBookmarks=1
