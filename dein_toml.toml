@@ -2,11 +2,14 @@
 [[plugins]]
 	repo = 'osyo-manga/vim-precious'
 	depends =['Shougo/context_filetype.vim']
+	on_ft=['toml']
 
 [[plugins]]
 	repo = 'Shougo/context_filetype.vim'
-	hook_add='''
+	on_ft=['toml']
+	hook_post_source='''
 	if !exists('g:context_filetype#filetypes')
 	let g:context_filetype#filetypes={}
 	endif
 	'''
+	

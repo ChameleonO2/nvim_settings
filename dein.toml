@@ -1,20 +1,22 @@
 
 [[plugins]]
-repo = 'Shougo/dein.vim'
+	repo = 'Shougo/dein.vim'
 
 [[plugins]]
 	repo = 'cespare/vim-toml'
 [[plugins]]
-repo = 'Shougo/vimproc.vim'
+	repo = 'Shougo/vimproc.vim'
 	hook_post_update = '''
 		let cmd = 'make'
 		let g:dein#plugin.build = cmd'
 	'''
-[[plugins]]
-	repo = 'thinca/vim-quickrun'
-	hook_post_update = '''
-		let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
-	'''
+
+# [[plugins]]
+# 	repo = 'thinca/vim-quickrun'
+# 	hook_post_update = '''
+# 	let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+# 	'''
+#
 
 [[plugins]]
 	repo = 'Shougo/deoplete.nvim'
@@ -51,21 +53,18 @@ repo = 'Shougo/vimproc.vim'
 [[plugins]]
 	repo ='airblade/vim-gitgutter'
 
-# [[plugins]]
-# 	repo = 'flazz/vim_colorschemes'
 
 [[plugins]]
 	repo = 'cohama/lexima.vim'
 	
-# [[plugins]]
-# 	repo = 'osyo-manga/vim-precious'
-# 	depends =['Shougo/context_filetype.vim']
-#
-# [[plugins]]
-# 	repo = 'Shougo/context_filetype.vim'
-# 	hook_add='''
-# 	if !exists('g:context_filetype#filetypes')
-# 	let g:context_filetype#filetypes={}
-# 	endif
-# 	'''
 
+[[plugins]]
+	repo = 'haya14busa/vim-easymotion'
+	#repo = 'Lokaltog/vim-easymotion'
+	hook_add='''
+		map <Leader> <Plug>(easymotion-prefix)
+		let g:EasyMotion_do_mapping = 0
+		nmap s <Plug>(easymotion-s2)
+		nmap S <Plug>(easymotion-S)
+
+	'''
