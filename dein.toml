@@ -69,3 +69,5 @@
 		nmap <Leader>L <Plug>(easymotion-overwin-line)
 
 	'''
+[[plugins]]
+	repo ='vim-latex/vim-latex'
